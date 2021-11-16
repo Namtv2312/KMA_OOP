@@ -13,6 +13,14 @@ public class Rectangle {
     public float length;
     public float width;
 
+    public Rectangle() {
+    }
+
+    public Rectangle(float length, float width) {
+        this.length = length;
+        this.width = width;
+    }
+
     public float getLength() {
         return length;
     }

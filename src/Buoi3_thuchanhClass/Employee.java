@@ -61,6 +61,7 @@ public class Employee {
         System.out.println("Name: "+getFullName());
         System.out.println("Salary Month: "+getSalaryMonthly());
         System.out.println("Salary Yearly: "+getSalaryYearly());
-        
+       
     }
+
 }

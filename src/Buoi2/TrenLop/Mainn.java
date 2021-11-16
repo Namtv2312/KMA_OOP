@@ -23,6 +23,8 @@ public class Mainn {
         meoVn.setCountry("vn");
         
         meoVn.showInfo();
+        Cat meoCat= new Cat("ok", "okk===", 2);
+        meoCat.showInfo();
         
         
         Officer nv1 =new Officer();

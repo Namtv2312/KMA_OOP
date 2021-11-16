@@ -16,8 +16,18 @@ public class Cat {
     
     // create method
 
+    
     public String getName() {
         return name;
+    }
+
+    public Cat(String name, String country, int age) {
+        this.name = name;
+        this.country = country;
+        this.age = age;
+    }
+    public Cat(){
+        
     }
 
     public String getCountry() {

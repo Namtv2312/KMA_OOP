@@ -13,6 +13,19 @@ public class Circle {
     public float Radius;
     public String Color;
 
+    public Circle(float Radius, String Color) {
+        this.Radius = Radius;
+        this.Color = Color;
+    }
+    public Circle(float Radius){
+        this.Color= "Red";
+        this.Radius= Radius;
+    }
+    public Circle(){
+        this.Radius= 1;
+        this.Color= "rED";
+    }
+
     public float getRadius() {
         return Radius;
     }
