@@ -13,20 +13,21 @@ import java.util.Scanner;
  * @author Administrator
  */
 public class main_c_do_while {
-        public static boolean isPrime(int m) {
+
+    public static boolean isPrime(int m) {
 
         int i = 1;
-        if(m==2)return true;
-        do{
+        if (m == 2) {
+            return true;
+        }
+        do {
             if (m % ++i == 0) {
 
                 return false;
             }
-        }
-        while ((i) <= sqrt(m)) ;
+        } while ((i) <= sqrt(m));
         return true;
     }
-        
 
     public static void main(String[] args) {
         int m;
