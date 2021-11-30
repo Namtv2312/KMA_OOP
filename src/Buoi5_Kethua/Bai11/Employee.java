@@ -33,6 +33,7 @@ public class Employee extends Person{
     public void setLuongCB(double luongCB) {
         this.luongCB = luongCB;
     }
+    @Override
     public void nhap(){
         super.nhap();
         System.out.println("Nhap lungcb: ");
@@ -41,6 +42,7 @@ public class Employee extends Person{
         System.out.println("Nhap heso luong");
         hsCB= sc.nextInt();
     }
+    @Override
     public void show(){
         super.show();
         System.out.println("Luongcb: "+ this.getLuongCB());

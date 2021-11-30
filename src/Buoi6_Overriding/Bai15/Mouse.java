@@ -14,9 +14,11 @@ public class Mouse extends USB{
     public Mouse(String maHang, double gia, int soLuong) {
         super(maHang, gia, soLuong);
     }
+    @Override
     public double tongTien(){
         return  gia*0.8*soLuong;
     }
+    @Override
     public void showInfo(){
         System.out.println("Show in for khach hang mua chuot:");
         super.showInfo();
