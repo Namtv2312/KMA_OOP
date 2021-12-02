@@ -12,33 +12,31 @@ import java.util.Scanner;
  * @author Administrator
  */
 public class Nguoi {
-    public String hoTen;
-    public String diaChi;
-    public int namSinh;
-    
+
+    private String hoTen;
+    private String diaChi;
+    private int namSinh;
+
     //method
-    
-    public void nhapTT(){
+    public void nhapTT() {
         Scanner sc = new Scanner(System.in);
-        
+
         System.out.println("Nhap ho ten: ");
         hoTen = sc.nextLine();
-        
+
         System.out.println("Nhap dia chi: ");
-        diaChi= sc.nextLine();
-        
+        diaChi = sc.nextLine();
+
         System.out.println("Nhap nam sinh: ");
-        namSinh= sc.nextInt();
-        
-       
-        
+        namSinh = sc.nextInt();
+
     }
-    public void inTT()
-    {
+
+    public void inTT() {
         System.out.println("Thong tin :");
-        System.out.println("Ho ten :"+hoTen);
-        System.out.println("Dia chi: "+diaChi);
-        System.out.println("Nam sinh: "+ namSinh);
+        System.out.println("Ho ten :" + hoTen);
+        System.out.println("Dia chi: " + diaChi);
+        System.out.println("Nam sinh: " + namSinh);
         // the "this" keyword allows you to specify that
         // you mean "this type" and reference the members
         // of this type - in this instance it is allowing
@@ -79,5 +77,5 @@ public class Nguoi {
     public void setNamSinh(int namSinh) {
         this.namSinh = namSinh;
     }
-    
+
 }

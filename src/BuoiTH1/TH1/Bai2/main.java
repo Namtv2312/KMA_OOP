@@ -12,11 +12,13 @@ import java.util.Scanner;
  * @author Administrator
  */
 public class main {
-    public static String a;
+
+    static String a;
+
     public static void main(String[] args) {
         System.out.println("Nhap a:");
         Scanner sc = new Scanner(System.in);
-        a= sc.nextLine();
+        a = sc.nextLine();
         System.out.println(a);
     }
 }

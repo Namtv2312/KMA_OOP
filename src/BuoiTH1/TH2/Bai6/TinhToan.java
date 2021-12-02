@@ -5,8 +5,6 @@
  */
 package BuoiTH1.TH2.Bai6;
 
-import static java.lang.Double.valueOf;
-
 /**
  *
  * @author Administrator
@@ -60,10 +58,10 @@ public class TinhToan {
         return sum;
     }
 
-    public double tongNC(int n, int x, int k) {
+    public double tongNC(int n, double x, double k) {
         double sum = 0;
-        for (int i = 1; i <= n; i++) {
-            sum += giaithua(i) / (Math.pow(x, i) + Math.pow(-1, i + 1) * Math.pow(k, i));
+        for (double i = 1; i <= n; i++) {
+            sum += (double)giaithua((int)i) / (Math.pow(x, i) + Math.pow(-1, i + 1) * Math.pow(k, i));
         }
         return sum;
     }

@@ -16,8 +16,8 @@ import java.util.stream.*;
  */
 public class DaGiac {
 
-    public int soCanh;
-    public double[] sizeCanh = new double[soCanh];
+    int soCanh;
+    private double[] sizeCanh = new double[soCanh];
 
     public int getSoCanh() {
         return soCanh;

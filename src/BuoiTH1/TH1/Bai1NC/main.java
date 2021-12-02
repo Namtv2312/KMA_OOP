@@ -13,17 +13,19 @@ import java.util.Scanner;
  * @author Administrator
  */
 public class main {
-    public static  int soCanh;
-    public static int chieudai;
+
+    private static int soCanh;
+    private static int chieudai;
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap so canh::");
-        soCanh= sc.nextInt();
+        soCanh = sc.nextInt();
         System.out.println("Nhap chieu dai moi canh( g/s da giac deu:");
-        chieudai= sc.nextInt();
+        chieudai = sc.nextInt();
         System.out.println("Thong tin da giac: ");
-        System.out.println("So canh"+ valueOf(soCanh));
-        System.out.println("chieu dai moi canh:"+ valueOf(chieudai));
-        System.out.println("Chu vi :"+ valueOf(soCanh*chieudai));
+        System.out.println("So canh" + valueOf(soCanh));
+        System.out.println("chieu dai moi canh:" + valueOf(chieudai));
+        System.out.println("Chu vi :" + valueOf(soCanh * chieudai));
     }
 }

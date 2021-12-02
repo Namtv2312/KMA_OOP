@@ -13,16 +13,18 @@ import java.util.Scanner;
  * @author Administrator
  */
 public class main {
+
     static Scanner sc = new Scanner(System.in);
-    public static int a;
-    public static int b;
+    static int a;
+    static int b;
+
     public static void main(String[] args) {
         System.out.println("Nhap a: ");
-        a= sc.nextInt();
+        a = sc.nextInt();
         System.out.println("Nhap b:");
-        b= sc.nextInt();
-        System.out.println("Tong a b: "+valueOf( a+b));
-        System.out.println("Hieu a b: "+ valueOf(a-b));
-        
+        b = sc.nextInt();
+        System.out.println("Tong a b: " + valueOf(a + b));
+        System.out.println("Hieu a b: " + valueOf(a - b));
+
     }
 }

@@ -7,8 +7,6 @@ package BuoiTH2.BTH3.Bai2;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
-import java.time.LocalTime;
-import static java.time.LocalTime.parse;
 import java.util.Date;
 import java.util.Scanner;
 import java.util.logging.Level;
@@ -20,10 +18,10 @@ import java.util.logging.Logger;
  */
 public class TheThuVien extends SinhVien {
 
-    public int SoPhieuMuon;
-    public Date NgayMuon;
-    public int hanTra;
-    public String soHieuSach;
+    private int SoPhieuMuon;
+    private Date NgayMuon;
+    private int hanTra;
+    private String soHieuSach;
 
     public TheThuVien(int SoPhieuMuon, Date NgayMuon, int hanTra, String soHieuSach) {
         this.SoPhieuMuon = SoPhieuMuon;

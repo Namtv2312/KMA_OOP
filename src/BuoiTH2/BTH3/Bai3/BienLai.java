@@ -13,9 +13,9 @@ import java.util.Scanner;
  */
 public class BienLai {
 
-    public int chisoCu;
-    public int chisoMoi;
-    public double sotienPhaiTra;
+    private int chisoCu;
+    private int chisoMoi;
+    private double sotienPhaiTra;
 
     public BienLai() {
     }

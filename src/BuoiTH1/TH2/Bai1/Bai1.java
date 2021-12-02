@@ -15,7 +15,7 @@ import sun.security.ec.ECPublicKeyImpl;
  * @author Administrator
  */
 public class Bai1 {
-    public static int i;
+    static int i;
     static Scanner sc = new Scanner(System.in);
     public static void main(String[] args) {
         System.out.println("Nhap I:");

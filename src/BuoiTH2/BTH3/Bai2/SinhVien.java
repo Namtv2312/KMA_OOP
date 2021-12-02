@@ -14,10 +14,10 @@ import java.util.Scanner;
  */
 public class SinhVien {
 
-    public String hoTen;
-    public int tuoi;
-    public int namsinh;
-    public String lop;
+    private String hoTen;
+    private int tuoi;
+    private int namsinh;
+    private String lop;
 
     public String getHoTen() {
         return hoTen;
@@ -61,8 +61,7 @@ public class SinhVien {
         System.out.println("Nhap nam sinh sinh vien");
         namsinh = sc.nextInt();
         tuoi = Calendar.getInstance().get(Calendar.YEAR) - namsinh;
-        System.out.println("Nhap lop sinh vien: ");
-        sc.next();
+        System.out.println("Nhap lop sinh vien: ");sc.nextLine();
         lop = sc.nextLine();
     }
 

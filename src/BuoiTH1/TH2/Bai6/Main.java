@@ -25,8 +25,8 @@ public class Main {
             System.out.printf("%30s|1. Tong day 1                      |\n", "");
             System.out.printf("%30s|2. Tong day 2                      |\n", "");
             System.out.printf("%30s|3. Tong day 3                      |\n", "");
-            System.out.printf("%30s|3. Tong day 4                      |\n", "");
-            System.out.printf("%30s|3. Tong day nang cao               |\n", "");
+            System.out.printf("%30s|4. Tong day 4                      |\n", "");
+            System.out.printf("%30s|5. Tong day nang cao               |\n", "");
             System.out.printf("%30s Moi ban chon chuc nang             \n", "");
             int chon = sc.nextInt();
             switch (chon) {
@@ -44,7 +44,7 @@ public class Main {
                     System.out.println("Tong 4: " + (t1.tongD(n)));
                     break;
                 case 5:
-                    System.out.println("Tong Nang cao :" + valueOf(t1.tongNC(n, 1, 1)));
+                    System.out.println("Tong Nang cao :" + valueOf(t1.tongNC(n, 5, 5)));
                     break;
                 case 6:
                     exit(0);

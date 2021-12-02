@@ -12,10 +12,11 @@ import java.util.Scanner;
  * @author Administrator
  */
 public class KhachHang {
+
     String hoTen;
-String diaChi;
-String sdt;
-String email;
+    String diaChi;
+    String sdt;
+    String email;
 
     public String getHoTen() {
         return hoTen;
@@ -49,25 +50,27 @@ String email;
         this.email = email;
     }
 
-public KhachHang(){
+    public KhachHang() {
 
-}
-public void nhapKH(){
-    Scanner sc = new Scanner(System.in);
-    System.out.println("Nhap ho ten: ");
-    hoTen=sc .nextLine();
-    System.out.println("Nhap dia chi: ");
-    diaChi= sc.nextLine();
-    System.out.println("Nhap so dien thoai: ");
-    sdt= sc.nextLine();
-    System.out.println("Nhap email :");
-    email= sc.nextLine();
-}
-public void inKH(){
-System.out.println("--Ho ten:"+this.hoTen);
-System.out.println("--Dia chi:"+this.diaChi);
-System.out.println("--So dien thoai:"+this.sdt);
-System.out.println("--Email:"+this.email);
-}
+    }
+
+    public void nhapKH() {
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Nhap ho ten: ");
+        hoTen = sc.nextLine();
+        System.out.println("Nhap dia chi: ");
+        diaChi = sc.nextLine();
+        System.out.println("Nhap so dien thoai: ");
+        sdt = sc.nextLine();
+        System.out.println("Nhap email :");
+        email = sc.nextLine();
+    }
+
+    public void inKH() {
+        System.out.println("--Ho ten:" + this.hoTen);
+        System.out.println("--Dia chi:" + this.diaChi);
+        System.out.println("--So dien thoai:" + this.sdt);
+        System.out.println("--Email:" + this.email);
+    }
 
 }

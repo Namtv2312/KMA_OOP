@@ -13,9 +13,9 @@ import java.util.Scanner;
  */
 public class KhachHang extends BienLai {
 
-    public String hoTen;
-    public String sonha;
-    public int maSoCongto;
+    private String hoTen;
+    private String sonha;
+    private int maSoCongto;
 
     public KhachHang(String hoTen, String sonha, int maSoCongto) {
         this.hoTen = hoTen;

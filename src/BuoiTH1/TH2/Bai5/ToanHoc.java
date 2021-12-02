@@ -6,7 +6,6 @@
 package BuoiTH1.TH2.Bai5;
 
 import static java.lang.Math.sqrt;
-import java.util.stream.IntStream;
 
 /**
  *
