@@ -5,6 +5,7 @@
  */
 package BuoiTH2.BTH3.Bai2;
 
+import BuoiTH2.BTH3.Bai3.BienLai;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -66,6 +67,7 @@ public class TheThuVien extends SinhVien {
     }
 
     public void nhapTT() {
+
         SimpleDateFormat myFormat = new SimpleDateFormat("dd/MM/yyyy");
         Scanner sc = new Scanner(System.in);
         System.out.println("Nhap so phieu muon: ");

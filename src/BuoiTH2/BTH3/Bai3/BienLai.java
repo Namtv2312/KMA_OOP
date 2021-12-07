@@ -13,7 +13,7 @@ import java.util.Scanner;
  */
 public class BienLai {
 
-    private int chisoCu;
+    protected int chisoCu;
     private int chisoMoi;
     private double sotienPhaiTra;
 
