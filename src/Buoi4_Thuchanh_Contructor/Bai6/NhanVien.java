@@ -12,6 +12,7 @@ import java.util.Scanner;
  * @author Administrator
  */
 public class NhanVien {
+
     public String ten;
     public int tuoi;
     public String Diachi;
@@ -68,46 +69,46 @@ public class NhanVien {
     public void setTotalGio(int totalGio) {
         this.totalGio = totalGio;
     }
-    public void inputInfo(){
+
+    public void inputInfo() {
         System.out.println("Nhap thong tin Nhan vien");
-        Scanner sc= new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         System.out.println("Nhap ten nhan vien");
-        ten= sc.nextLine();
+        ten = sc.nextLine();
         System.out.println("Nhap tuoi nhan vien");
         tuoi = sc.nextInt();
         sc.nextLine();
         System.out.println("Nhap dia chi nhan vien");
-        Diachi= sc.nextLine();
+        Diachi = sc.nextLine();
         System.out.println("Nhap luong nhan vien");
-        luong= sc.nextDouble();
+        luong = sc.nextDouble();
         System.out.println("Nhap tong so gio lam ");
-        totalGio= sc.nextInt();
-        
+        totalGio = sc.nextInt();
+
     }
-    public void printInfo(){
+
+    public void printInfo() {
         System.out.println("Thong tin nhan vien");
-        System.out.println("Ten: "+getTen() );
-        System.out.println("Tuoi: "+ getTuoi());
-        System.out.println("Dia chi: "+ getDiachi());
-        System.out.println("Luong: "+getLuong());
-        System.out.println("Tong so gio lam: "+ getTotalGio());
-        
+        System.out.println("Ten: " + getTen());
+        System.out.println("Tuoi: " + getTuoi());
+        System.out.println("Dia chi: " + getDiachi());
+        System.out.println("Luong: " + getLuong());
+        System.out.println("Tong so gio lam: " + getTotalGio());
+
     }
-    public double  tinhTHuong(){
+
+    public double tinhTHuong() {
         double thuong;
-        if (totalGio>= 200) {
-            
-            thuong= luong /5;
-            
-            
+        if (totalGio >= 200) {
+
+            thuong = luong / 5;
+
+        } else if (totalGio < 200 && totalGio >= 100) {
+            thuong = luong / 10;
+        } else {
+            thuong = 0;
         }
-        else if (totalGio< 200 && totalGio >=100) {
-thuong= luong/10;
-        }
-        else{
-            thuong=0;
-        }
-        return  thuong;
+        return thuong;
     }
-    
+
 }

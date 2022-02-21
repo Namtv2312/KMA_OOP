@@ -16,6 +16,7 @@ public class TenNguoiNuocNgoai extends TenNguoiViet{
     }
 
     
+    @Override
     public void showTen(){
         System.out.printf("%s %s",ten,ho);
     }

@@ -14,7 +14,9 @@ import java.util.Scanner;
 public class Circle {
     public double radius;
     public String color;
-
+public Circle(){
+    System.out.println("OKOK nha");
+}
     public double getRadius() {
         return radius;
     }

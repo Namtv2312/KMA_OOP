@@ -269,8 +269,8 @@ public class calcATM extends javax.swing.JFrame {
     }//GEN-LAST:event_nhapTienActionPerformed
 
     private void btnrutTienActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnrutTienActionPerformed
-      if( Integer.valueOf(nhapTien.getText()) %50!=0){
-            JOptionPane.showMessageDialog(rootPane, "Số tiền phải là bội của 50000, Vui lòng thử lại");
+      if( Integer.valueOf(nhapTien.getText()) %50!=0 || Integer.valueOf(nhapTien.getText()) < 50000 ){
+            JOptionPane.showMessageDialog(rootPane, "Số tiền phải là bội của 50000 and > 50000, Vui lòng thử lại");
         }
       else
       {

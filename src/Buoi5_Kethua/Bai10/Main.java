@@ -12,6 +12,7 @@ package Buoi5_Kethua.Bai10;
 public class Main {
     public static void main(String[] args) {
        Cylinder c1= new Cylinder();
+       
         System.out.println("Nhap hinh tru 1");
         c1.nhap();
         System.out.println("Thong tin hinh tru 1");
