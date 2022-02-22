@@ -7,9 +7,11 @@ package OOPMN;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Comparator;
 import java.util.Hashtable;
-import java.util.Iterator;
+import java.util.List;
 import java.util.Map;
+import java.util.Map.Entry;
 import java.util.Scanner;
 
 /**
@@ -133,20 +135,15 @@ public class Management {
         nam = sc.nextLine();
         for (int i = 0; i < cusList.size(); i++) {
             if (cusList.get(i).maKhachhang.equalsIgnoreCase(nam)) {
-                System.out.println("Nhap lai ten khach hang");
-                String name = sc.nextLine();
-                System.out.println("Nhap lai nam sinh khach hang ");
-                int namsinh = sc.nextInt();
-                sc.nextLine();
-                System.out.println("Nhap lai dia chi khach hang: ");
-                String dc = sc.nextLine();
-                cusList.get(i).setALL(nam, name, namsinh, dc);
+                cusList.get(i).nhaptenKH();
+                cusList.get(i).nhapdcKH();
+                cusList.get(i).nhapnamsinhKH();
                 check = 1;
             }
 
         }
         if (check == 0) {
-            System.out.println("Khong co khach hang nao nhu vay");
+            System.out.println("Khong co ton tai ma khach hang nhu the");
         }
     }
 
@@ -156,8 +153,23 @@ public class Management {
             Product tmp = new Product();
             Customer tmpCustomer = new Customer();
             tmp.nhapmaSP();
-            System.out.println("Nhap so luong: ");
-            int soluong = sc.nextInt();
+            int soluong;
+            while (true) {
+
+                try {
+                    System.out.println("Nhap so luong: ");
+                    soluong = sc.nextInt();
+                    if (soluong <= 0) {
+                        System.out.println("So luong phai lon hon 0");
+                    } else {
+                        break;
+                    }
+                } catch (Exception e) {
+                    System.out.println("Nhap type int");
+                    sc.nextLine();
+                }
+
+            }
             sc.nextLine();
             for (int i = 0; i < proList.size(); i++) {
                 if (proList.get(i).maSanpham.equalsIgnoreCase(tmp.maSanpham)) {
@@ -191,7 +203,7 @@ public class Management {
             }
 
             if (check == 0) {
-                System.out.println("San pham ban chon khong ton tai \n Vui long thu lai");
+                System.out.println("San pham ban chon khong ton tai hoac khong co san\n Vui long thu lai");
             }
 
             System.out.println(
@@ -206,12 +218,46 @@ public class Management {
     }
 
     public void listKHsUP() {
-         for (int i = 0; i < cusList.size(); i++) {
-            System.out.print(i + 1 + ".");
-           cusList.get(i).xuatSP();
-            System.out.println("So luong: " + compar.get(proList.get(i).maSanpham));
+        System.out.println("Danh sach khach hang : " + comparKH);
 
+        List<Map.Entry<String, Double>> list = new ArrayList<Entry<String, Double>>(comparKH.entrySet());
+
+        Collections.sort(list, new Comparator<Map.Entry<String, Double>>() {
+
+            public int compare(Entry<String, Double> entry1, Entry<String, Double> entry2) {
+                return entry1.getValue().compareTo(entry2.getValue());
+            }
+
+        });
+        System.out.println("DANH SACH KHACH HANG (SORTED)");
+
+        for (Map.Entry<String, Double> entry : list) {
+            for (int i = 0; i < cusList.size(); i++) {
+                if (cusList.get(i).maKhachhang.equalsIgnoreCase(entry.getKey())) {
+                    cusList.get(i).xuatKH();
+                    System.out.println("So tien: " + comparKH.get(cusList.get(i).maKhachhang));
+                }
+            }
         }
+
     }
-    
+
+    public void maxKHs() {
+        System.out.println("KHACH HANG VIP");
+        String maxKey = null;
+        Double maxValue = Double.MIN_VALUE;
+        for (Map.Entry<String, Double> entry : comparKH.entrySet()) {
+            if (entry.getValue() > maxValue) {
+                maxValue = entry.getValue();
+                maxKey = entry.getKey();
+            }
+        }
+        for (int i = 0; i < cusList.size(); i++) {
+            if (cusList.get(i).maKhachhang.equalsIgnoreCase(maxKey)) {
+                cusList.get(i).xuatKH();
+            }
+        }
+
+    }
+
 }

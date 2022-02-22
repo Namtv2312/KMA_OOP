@@ -41,7 +41,9 @@ public class Main {
                     st1.listKHsUP();
                     break;
                 case "8":
+                    st1.maxKHs();
                     break;
+
                 case "0":
                     return;
                 default:
