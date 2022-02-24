@@ -5,12 +5,12 @@
  */
 package OOPMN;
 
+import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.Date;
 import java.util.Scanner;
-import java.util.logging.Level;
-import java.util.logging.Logger;
+
 
 /**
  *
@@ -73,7 +73,7 @@ public class Product {
 
     public void nhapngaySX() {
 
-        SimpleDateFormat fm = new SimpleDateFormat("dd/MM/YYYY");
+        SimpleDateFormat fm = new SimpleDateFormat("dd/MM/yyyy");
         while (Boolean.TRUE) {
             try {
                 System.out.println("Nhap ngay san xuat: ");
@@ -81,7 +81,7 @@ public class Product {
                 ngaySanxuat = fm.parse(tmp);
                 break;
             } catch (ParseException ex) {
-                System.out.println("Ngay phai dung dinh dang dd/MM/YYYY");
+                System.out.println("Ngay phai dung dinh dang dd/MM/yyyy");
             }
         }
     }
@@ -90,6 +90,8 @@ public class Product {
         System.out.println("MA SP: " + maSanpham);
         System.out.println("TEN SP: " + tenSanpham);
         System.out.println("DON GIA: " + donGia);
-        System.out.println("NGAY SX:" + ngaySanxuat);
+        //DateFormat dateFormat = new SimpleDateFormat("dd/MM/yyyy");
+        System.out.println("NGAY SX:" + (new SimpleDateFormat("dd/MM/yyyy")).format(ngaySanxuat));
+       
     }
 }
