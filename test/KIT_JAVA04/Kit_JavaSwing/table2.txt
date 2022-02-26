@@ -1,0 +1,3 @@
+Họ tên , Ngày sinh , Địa chỉ , Gioi tính
+Nam    /    23     /     vp  / nam
+ANH    /    12     /    vp   / nu

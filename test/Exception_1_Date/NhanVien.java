@@ -46,6 +46,7 @@ public class NhanVien {
 
     public void setLuong(double luong) {
         this.luong = luong;
+    
     }
 
     public void nhap() {

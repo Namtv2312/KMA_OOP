@@ -1,0 +1,4 @@
+Sinh Vien thu1{
+Student{{hoTen=1, ngaySinh=23/12/2001, diaChi=2, gioiTinh=Nam}msv=1, email=1, diemTk=9.0}
+Sinh Vien thu2{
+Student{{hoTen=12, ngaySinh=23/12/2001, diaChi=3, gioiTinh=Nam}msv=4, email=3, diemTk=4.0}

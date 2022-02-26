@@ -1,0 +1,10 @@
+Hacker thu1{
+NhanVien{hoTen=Tran Van Nam, ngaySinh=23/12/2001, diaChi=Vp, gioiTinh=Nam, phongBan=HACK, hsLuong=10.0, thamNien=10, luongCB=1000000.0}
+Hacker thu2{
+NhanVien{hoTen=Tran Van a, ngaySinh=23/12/2001, diaChi=Vp, gioiTinh=Nam, phongBan=HACK, hsLuong=10.0, thamNien=10, luongCB=1000000.0}
+Hacker thu3{
+NhanVien{hoTen=Tran Van am, ngaySinh=23/12/2001, diaChi=Vp, gioiTinh=Nam, phongBan=HACK, hsLuong=10.0, thamNien=10, luongCB=1000000.0}
+Hacker thu4{
+NhanVien{hoTen=Tran Van Nm, ngaySinh=23/12/2001, diaChi=Vp, gioiTinh=Nam, phongBan=HACK, hsLuong=10.0, thamNien=10, luongCB=1000000.0}
+Hacker thu5{
+NhanVien{hoTen=Tran Van Na, ngaySinh=23/12/2001, diaChi=Vp, gioiTinh=Nam, phongBan=HACK, hsLuong=10.0, thamNien=10, luongCB=1000000.0}
